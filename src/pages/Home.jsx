@@ -9,9 +9,9 @@ const Home = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [loading, setLoading] = useState(false);
-    const [tasks, setTasks] = useState([]);
     const [refresh, setRefresh] = useState(false);
 
+    const { tasks, setTasks } = useContext(Context);
     const { isAuthenticated } = useContext(Context);
 
     const updateHandler = async (id) => {
@@ -81,6 +81,7 @@ const Home = () => {
                 setTasks(res.data.tasks);
             })
             .catch((e) => {
+                console.log(e.response);
                 toast.error(e.response.data.message);
             });
     }, [refresh]);

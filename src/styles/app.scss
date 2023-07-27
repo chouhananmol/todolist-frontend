@@ -12,6 +12,7 @@
 @import "header";
 @import "login";
 @import "mediaquery";
+@import "profile";
 
 a {
   text-decoration: none;
@@ -20,6 +21,7 @@ a {
 
 .home {
   text-align: center;
+
   .heading {
     @include styledText(2rem, 100, uppercase);
     padding-top: 10vmax;
@@ -30,6 +32,7 @@ a {
     font-weight: 900;
   }
 }
+
 .todosContainer {
   @include flexBox(column, center, flex-start);
   @include fill;
@@ -43,7 +46,8 @@ a {
   @include flexBox(row, center, space-between);
   width: 100%;
   padding: 2rem;
-  > div:last-of-type {
+
+  >div:last-of-type {
     @include flexBox(row);
   }
 
@@ -65,6 +69,7 @@ a {
   @include styledText;
   @include myButton;
 }
+
 .container {
   @include defaultStyle;
   padding: 5rem 2rem;
