@@ -13,6 +13,7 @@
 @import "login";
 @import "mediaquery";
 @import "profile";
+@import "loader";
 
 a {
   text-decoration: none;
@@ -55,14 +56,6 @@ a {
     width: 2rem;
     height: 2rem;
   }
-}
-
-.loader {
-  @include defaultStyle;
-  @include flexBox(column, center, center);
-  @include styledText(2rem, 100, uppercase);
-  overflow-x: hidden;
-  width: 100vw;
 }
 
 .btn {

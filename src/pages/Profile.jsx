@@ -4,7 +4,7 @@ import { Context, server } from "../main";
 import Loader from "../components/Loader";
 
 const Profile = () => {
-    const { isAuthenticated, user, setUser } = useContext(Context);
+    const { isAuthenticated, user } = useContext(Context);
     const [loading, setLoading] = useState(true);
     const [tasks, setTasks] = useState([]);
 
@@ -40,7 +40,6 @@ const Profile = () => {
         <div className="profile-container">
             <h2 className="profile-heading">Profile</h2>
             <div className="profile-info">
-                <h3 className="profile-subheading">User Information:</h3>
                 <p className="profile-data">
                     <span className="profile-label">Name: </span> {user.name}
                 </p>
