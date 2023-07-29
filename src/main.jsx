@@ -29,5 +29,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AppWrapper />
   </React.StrictMode>
 );
-// export const server = "https://todolist-backend-v6tx.onrender.com/api/v1";
-export const server = "http://localhost:5000/api/v1";
+export const server = "https://todolist-backend-v6tx.onrender.com/api/v1";
+// export const server = "http://localhost:5000/api/v1";
